@@ -8,12 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 public class CartController {
-
-    @GetMapping("/cart-items")
-    public CartItem[] getCartItems(){
-        return new CartItem[0];
-    }
-
     @Autowired
     private CartService service;
 
